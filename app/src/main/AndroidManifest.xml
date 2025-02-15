@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ccb.arcselect">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -9,15 +8,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ccb.arcselect.ui.ArcSelectActivity"></activity>
-        <activity android:name="com.ccb.arcselect.ui.CircleArcActivity" />
-        <activity android:name="com.ccb.arcselect.ui.AutoSelectActivity" />
-        <activity android:name="com.ccb.arcselect.ui.HorizontalSelectActivity" />
-        <activity android:name="com.ccb.arcselect.ui.ArcSelectRotateActivity" />
-        <activity android:name="com.ccb.arcselect.ui.ArcActivity" />
-        <activity android:name="com.ccb.arcselect.ui.PadingArcActivity" />
-        <activity android:name="com.ccb.arcselect.ui.BottomArcActivity" />
-        <activity android:name="com.ccb.arcselect.StartActivity">
+        <activity android:name="com.ccb.arcselect.ui.ArcSelectActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.CircleArcActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.AutoSelectActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.HorizontalSelectActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.ArcSelectRotateActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.ArcActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.PadingArcActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.ui.BottomArcActivity"
+            android:exported="false"/>
+        <activity android:name="com.ccb.arcselect.StartActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

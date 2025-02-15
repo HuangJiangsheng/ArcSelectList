@@ -33,31 +33,22 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.bt_arc_select_r:
-                start(ArcSelectRotateActivity.class);
-                break;
-            case R.id.bt_arc:
-                start(ArcActivity.class);
-                break;
-            case R.id.bt_arc2:
-                start(PadingArcActivity.class);
-                break;
-            case R.id.bt_auto_select:
-                start(AutoSelectActivity.class);
-                break;
-            case R.id.bt_carc:
-                start(CircleArcActivity.class);
-                break;
-            case R.id.bt_arc_select_:
-                start(ArcSelectActivity.class);
-                break;
-            case R.id.bt_auto_select_h:
-                start(HorizontalSelectActivity.class);
-                break;
-                case R.id.bt_auto_select_h2:
-                start(BottomArcActivity.class);
-                break;
+        if (view.getId() == R.id.bt_arc_select_r) {
+            start(ArcSelectRotateActivity.class);
+        } else if (view.getId() == R.id.bt_arc) {
+            start(ArcActivity.class);
+        } else if (view.getId() == R.id.bt_arc2) {
+            start(PadingArcActivity.class);
+        } else if (view.getId() == R.id.bt_auto_select) {
+            start(AutoSelectActivity.class);
+        } else if (view.getId() == R.id.bt_carc) {
+            start(CircleArcActivity.class);
+        } else if (view.getId() == R.id.bt_arc_select_) {
+            start(ArcSelectActivity.class);
+        } else if (view.getId() == R.id.bt_auto_select_h) {
+            start(HorizontalSelectActivity.class);
+        } else if (view.getId() == R.id.bt_auto_select_h2) {
+            start(BottomArcActivity.class);
         }
     }
 
